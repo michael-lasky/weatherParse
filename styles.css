@@ -1,0 +1,171 @@
+body {
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+  margin: 0px;
+}
+
+#background {
+  float: left;
+  position: relative;
+  width: 1280px;
+  height: 720px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overlow: hidden;
+}
+
+#backplate {
+  float: left;
+  position: relative;
+  width: 1059px;
+  height: 441px;
+  margin-top: 72px;
+  margin-left: -1164px;
+  z-index: 2;
+}
+
+#fs_paragraph {
+  float: left;
+  position: relative;
+  width: 860px;
+  margin-top: 72px;
+  margin-left: -1108px;
+  z-index: 12;
+  min-height: 389px;
+}
+
+#title {
+  float: left;
+  position: relative;
+  width: 330px;
+  margin-top: 0;
+  left: 350px;
+  z-index: 11;
+  min-height: 87px;
+}
+
+#location {
+  left: 350px;
+  position: absolute;
+  width: 672px;
+  margin-top: 60px;
+  margin-left: -231px;
+  z-index: 7;
+  min-height: 39px;
+}
+
+#icon {
+  left: 2px;
+  position: absolute;
+  top: 110px;
+  width: 134px;
+  height: 134px;
+  z-index: 9;
+  clear: left;
+}
+
+#condition {
+  left: 40px;
+  position: absolute;
+  width: 435px;
+  top: 250px;
+  z-index: 10;
+  min-height: 120px;
+}
+
+#temp {
+  left: 150px;
+  top: 110px;
+  position: absolute;
+  width: 300px;
+  z-index: 8;
+  min-height: 199px;
+}
+
+#dewpoint {
+  position: absolute;
+  width: 80px;
+  top: 196px;
+  left: 660px;
+  z-index: 5;
+  min-height: 89px;
+}
+
+#wind {
+  position: absolute;
+  width: 500px;
+  top: 287px;
+  left: 660px;
+  z-index: 4;
+  min-height: 89px;
+}
+
+#feelslike {
+  position: absolute;
+  left: 660px;
+  width: 500px;
+  top: 106px;
+  z-index: 6;
+  min-height: 89px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: center;
+  font: bold 43px/52px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4b4b4b;
+  letter-spacing: normal;
+}
+
+.text-style-1 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: left;
+  font: bold 52px/62px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.text-style-2 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: center;
+  font: 23px/28px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.text-style-3 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: left;
+  font: bold 53px/64px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-decoration: none;
+  color: #4b4b4b;
+  letter-spacing: normal;
+}
+
+.text-style-4 {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  text-align: center;
+  font: bold 133px/160px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4b4b4b;
+  letter-spacing: normal;
+}

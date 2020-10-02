@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fs2</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+    ></script>
+    <meta http-equiv="refresh" content="120" />
+  </head>
+  <body>
+    <img id="background" src="clear_background.png" />
+    <img id="backplate" src="backplate.png" />
+    <div id="fs_paragraph">
+      <div id="title">
+        <p class="text-style-1">RIGHT NOW</p>
+      </div>
+      <div id="location2">
+        <div id="location" class="text-style-2"></div>
+      </div>
+      <img id="icon" />
+      <div id="condition2">
+        <div id="condition" class="text-style-3"></div>
+      </div>
+      <div id="temp2">
+        <div id="temp" class="text-style-4"></div>
+      </div>
+      <div id="dewpoint2">
+        <div id="dewpoint" class="text-style-3"></div>
+      </div>
+      <div id="wind2">
+        <div id="wind" class="text-style-3"></div>
+      </div>
+      <div id="feelslike2">
+        <div id="feelslike" class="text-style-3"></div>
+      </div>
+    </div>
+
+    <script>
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+          myFunction(xhttp);
+        }
+      };
+      xhttp.open(
+        "GET",
+        "http://w1.weather.gov/xml/current_obs/display.php?stid=KCLE",
+        true
+      );
+      xhttp.send();
+
+      function myFunction(xml) {
+        var xmlDoc = xml.responseXML;
+        document.getElementById(
+          "location"
+        ).innerHTML = xmlDoc.getElementsByTagName(
+          "location"
+        )[0].childNodes[0].nodeValue;
+
+        document.getElementById(
+          "condition"
+        ).innerHTML = xmlDoc.getElementsByTagName(
+          "weather"
+        )[0].childNodes[0].nodeValue;
+
+        var myTemp = xmlDoc.getElementsByTagName("temp_f")[0].childNodes[0]
+          .nodeValue;
+        var weatherSrc = myTemp.slice(0, 2) + "&deg;";
+        document.getElementById("temp").innerHTML = weatherSrc;
+
+        document.getElementById("feelslike").innerHTML =
+          xmlDoc.getElementsByTagName("visibility_mi")[0].childNodes[0]
+            .nodeValue + " miles";
+
+        document.getElementById("wind").innerHTML =
+          xmlDoc.getElementsByTagName("wind_mph")[0].childNodes[0].nodeValue +
+          " mph";
+
+        document.getElementById(
+          "dewpoint"
+        ).innerHTML = xmlDoc.getElementsByTagName(
+          "dewpoint_f"
+        )[0].childNodes[0].nodeValue;
+
+        var imageName = xmlDoc.getElementsByTagName("icon_url_name")[0]
+          .childNodes[0].nodeValue;
+        var weatherSrc =
+          "http://forecast.weather.gov/images/wtf/large/" + imageName;
+        document.getElementById("icon").src = weatherSrc;
+      }
+    </script>
+  </body>
+</html>
