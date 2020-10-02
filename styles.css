@@ -116,7 +116,7 @@ p {
   padding: 0;
   text-indent: 0;
   text-align: center;
-  font: bold 43px/52px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font: bold 43px/52px Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #4b4b4b;
@@ -128,7 +128,7 @@ p {
   padding: 0;
   text-indent: 0;
   text-align: left;
-  font: bold 52px/62px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font: bold 52px/62px Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -140,7 +140,7 @@ p {
   padding: 0;
   text-indent: 0;
   text-align: center;
-  font: 23px/28px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font: 23px/28px Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -152,7 +152,7 @@ p {
   padding: 0;
   text-indent: 0;
   text-align: left;
-  font: bold 53px/64px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font: bold 53px/64px Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-decoration: none;
   color: #4b4b4b;
   letter-spacing: normal;
@@ -163,7 +163,7 @@ p {
   padding: 0;
   text-indent: 0;
   text-align: center;
-  font: bold 133px/160px Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font: bold 133px/160px Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #4b4b4b;
